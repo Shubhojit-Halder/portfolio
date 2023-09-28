@@ -1,0 +1,48 @@
+.main {
+  /* margin-top: -50px; */
+  /* position: absolute; */
+  backdrop-filter: blur(16px) saturate(0%);
+  -webkit-backdrop-filter: blur(16px) saturate(0%);
+  background-color: rgba(17, 25, 40, 0.357);
+  border-radius: 12px;
+  border: 0px solid rgba(0, 0, 0, 0.791);
+  width: 70%;
+  /* right: 40px; */
+  height: 550px;
+  /* box-shadow: 0px 0px 10px 5px rgba(21, 21, 21, 0.919);; */
+}
+.nav {
+  backdrop-filter: blur(50px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  background-color: #070728;
+  /* border: 1px solid #ffffff; */
+  border-radius: 10px;
+  padding: 15px 10px;
+  width: 350px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+  font-family: "Fira Code", monospace;
+  font-size: 1.1rem;
+  font-weight: 600;
+  box-shadow: 0px 0px 50px 5px #000;
+  background: -webkit-linear-gradient(#ffffff, #151515);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.nav_ul {
+  width: 350px;
+  display: flex;
+  justify-content: space-evenly;
+  list-style: none;
+}
+.nav_ul li {
+  cursor: pointer;
+  text-transform: uppercase;
+}
