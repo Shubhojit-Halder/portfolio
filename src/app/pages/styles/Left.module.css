@@ -2,9 +2,6 @@
   /* margin-top: -50px; */
   /* left: 40px; */
   /* position: absolute; */
-  backdrop-filter: blur(5px) saturate(0%);
-  -webkit-backdrop-filter: blur(16px) saturate(0%);
-  background-color: rgba(17, 25, 40, 0.357);
   border-radius: 12px;
   border: 0px solid rgba(0, 0, 0, 0.791);
   width: 280px;
