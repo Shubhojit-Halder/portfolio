@@ -4,7 +4,7 @@ const TopName = () => {
   return (
     <>
       <div className={styles.head1}>Hey,There!!</div>
-      <div className={styles.head2}>I'm Shubhojit Halder :)</div>
+      <div className={styles.head2}>I'm SHUBHOJIT HALDER :)</div>
     </>
   );
 };

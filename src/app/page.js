@@ -1,12 +1,12 @@
 import Image from "next/image";
 import styles from "./page.module.css";
-import Left from "./Left";
-import Right from "./Right";
 import Navbar from "./Navbar";
 import myImg from "../../public/my.png";
 import squi from "../../public/squi.png";
 import dothr from "../../public/dothr.png";
+import dot1 from "../../public/dot1.png";
 import TopName from "./TopName";
+import BoxComp from "./BoxComp";
 const Home = () => {
   return (
     <main className={styles.main}>
@@ -19,7 +19,7 @@ const Home = () => {
             borderRadius: "30px 30px 0px 30px",
             marginTop: "-20px",
             marginRight: "20px",
-            filter: "contrast(115%)",
+            // filter: "contrast(1%)",
             // position: "absolute",
             // right: 0,
           }}
@@ -40,13 +40,26 @@ const Home = () => {
             position: "absolute",
             bottom: "-100px",
             rotate: "180deg",
-            filter: "invert(100%) ",
+            filter: "invert(100%)",
             width: "100px",
             height: "100px",
           }}
         />
       </div>
-      
+      <BoxComp />
+      <Image
+        src={dot1}
+        style={{
+          position: "absolute",
+          bottom:0,
+          left:-50,
+          rotate: "180deg",
+          filter: "invert(40%)",
+          opacity:0.4,
+          width: "200px",
+          height: "200px",
+        }}
+      />
     </main>
   );
 };

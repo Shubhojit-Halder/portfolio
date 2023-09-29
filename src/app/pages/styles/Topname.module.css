@@ -5,10 +5,24 @@
   padding: 10px;
   padding-bottom: 2px;
 }
-.head1{
-    font-size: 1.5rem;
+.head1 {
+  font-size: 1.75rem;
+  background: -webkit-linear-gradient(#ffffff, #151515);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
-.head2{
-    font-size: 3.5rem;
-    font-weight: 800;
+.head2 {
+  font-size: 3.5rem;
+  font-weight: 800;
+  background: rgb(0, 10, 108);
+  background: -webkit-linear-gradient(
+    rgb(255, 255, 255) 15%,
+    rgb(169, 170, 180) 30%,
+    rgb(141, 141, 144) 40%,
+    rgb(65, 65, 65) 55%,
+    rgb(40, 40, 40) 62%,
+    rgb(32, 32, 32) 81%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
