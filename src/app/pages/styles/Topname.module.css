@@ -2,6 +2,8 @@
 .head2 {
   text-align: center;
   font-family: "Fira Code", monospace;
+  /* font-family: "Inter" sans-serif; */
+
   padding: 10px;
   padding-bottom: 2px;
 }
@@ -12,9 +14,10 @@
   -webkit-text-fill-color: transparent;
 }
 .head2 {
-  font-size: 3.5rem;
+  font-size: 4rem;
+  font-family: "Inter" sans-serif;
   font-weight: 800;
-  background: rgb(0, 10, 108);
+  /* background: rgb(0, 10, 108);
   background: -webkit-linear-gradient(
     rgb(255, 255, 255) 15%,
     rgb(169, 170, 180) 30%,
@@ -22,7 +25,20 @@
     rgb(65, 65, 65) 55%,
     rgb(40, 40, 40) 62%,
     rgb(32, 32, 32) 81%
+  ); */
+  background: rgb(37, 1, 115);
+  background: radial-gradient(
+    circle,
+    rgba(37, 1, 115, 1) 1%,
+    rgba(53, 1, 138, 1) 10%,
+    rgba(85, 24, 155, 1) 24%,
+    rgba(172, 48, 130, 1) 35%,
+    rgba(211, 39, 82, 1) 71%,
+    rgba(253, 29, 29, 1) 100%,
+    rgba(252, 176, 69, 1) 100%
   );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }

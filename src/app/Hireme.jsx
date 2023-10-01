@@ -5,18 +5,17 @@ const Hireme = () => {
   return (
     <div
       style={{
-        position: "absolute",
-        right: 0,
-        marginTop: "100px",
+        position: "relative",
+        right:0,
+        left:"85%",
+        marginTop:"-200px",
         rotate: "90deg",
-        // border: "1px solid white",
         padding: "5px",
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
         width: "220px",
         height:"30px",
-        bottom:"150px",
         fontSize:"16px"
       }}
     >

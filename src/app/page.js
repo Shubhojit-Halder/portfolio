@@ -10,6 +10,7 @@ import BoxComp from "./BoxComp";
 import org1 from "../../public/org1.png";
 import Hireme from "./Hireme";
 import About from "./About";
+
 const Home = () => {
   return (
     <>
@@ -20,6 +21,7 @@ const Home = () => {
           <Image
             src={org1}
             style={{
+              position: "relative",
               borderRadius: "30px 30px 0px 30px",
               marginTop: "-20px",
               marginRight: "20px",
@@ -33,8 +35,8 @@ const Home = () => {
           <Image
             src={squi}
             style={{
-              position: "absolute",
-              top: 0,
+              position: "relative",
+              top: -400,
               filter: "invert(90%) blur(1px)",
               width: "100px",
               height: "100px",
@@ -43,8 +45,9 @@ const Home = () => {
           <Image
             src={dothr}
             style={{
-              position: "absolute",
-              bottom: "-100px",
+              position: "relative",
+              bottom: "90px",
+              left: "-100px",
               rotate: "180deg",
               filter: "invert(100%)",
               width: "100px",
@@ -52,21 +55,22 @@ const Home = () => {
             }}
           />
         </div>
-        <BoxComp />
+        {/* <BoxComp /> */}
+        <Hireme />
         <Image
           src={dot1}
           style={{
-            position: "absolute",
-            bottom: 0,
+            position: "relative",
+            // bottom: 0,
+            top:100,
             left: -50,
             rotate: "180deg",
             filter: "invert(40%)",
             opacity: 0.4,
-            width: "200px",
-            height: "200px",
+            width: "250px",
+            height: "250px",
           }}
         />
-        <Hireme />
       </main>
       <About />
     </>
