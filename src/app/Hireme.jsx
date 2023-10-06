@@ -12,20 +12,19 @@ const Hireme = () => {
         rotate: "90deg",
         padding: "5px",
         display: "flex",
-        justifyContent: "center",
         alignItems: "center",
         width: "220px",
         height:"30px",
-        fontSize:"16px"
+        fontSize:"1.3rem",
+        color:"#000"
       }}
     >
       Want to hire me{" "}
       <Image
         style={{
-          marginLeft: "20px",
-          width: "10px",
-          height: "50px",
-          filter: "invert(90%)",
+          marginLeft: "40px",
+          width: "15px",
+          height: "100px",
           rotate: "-90deg",
         }}
         src={arrow}

@@ -27,14 +27,13 @@ const About = () => {
           this website.
         </div>
         {/* <Image src={pngegg} className={styles.underline}/> */}
-        <div className={styles.colour_circle}></div>
+        {/* <div className={styles.colour_circle}></div> */}
         <div
           style={{
             display: "flex",
             justifyContent: "space-evenly",
             alignItems: "center",
             flexWrap: "wrap",
-            flex: 1,
           }}
         >
           <AboutBoxes

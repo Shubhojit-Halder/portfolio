@@ -23,8 +23,13 @@
   font-family: "Fira Code", monospace;
   font-size: 1.1rem;
   font-weight: 600;
-  box-shadow: 0px 0px 50px 5px #000;
-  background-color: #000000;
+
+  /* box-shadow: 0px 0px 5px 2px #d7d7d7; */
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(10px) saturate(180%);
+  background-color: rgba(238, 238, 238, 0.75);
+  border-radius: 12px;
+  border: 1px solid rgba(207, 207, 207, 0.248);
 }
 .nav_ul {
   background: -webkit-linear-gradient(#ffffff, #151515);

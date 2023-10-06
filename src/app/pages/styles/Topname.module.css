@@ -1,22 +1,26 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair:opsz,wght@5..1200,400;5..1200,500;5..1200,600;5..1200,700&display=swap");
 .head1,
 .head2 {
-  text-align: center;
-  font-family: "Fira Code", monospace;
-  /* font-family: "Inter" sans-serif; */
-
+  margin-left: 50px;
+  font-family: "Playfair", serif;
   padding: 10px;
   padding-bottom: 2px;
 }
 .head1 {
-  font-size: 1.75rem;
-  background: -webkit-linear-gradient(#ffffff, #151515);
+  text-align: left;
+  font-size: 2rem;
+  background: -webkit-linear-gradient(#3e3e3e, #151515);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 .head2 {
-  font-size: 4rem;
-  font-family: "Inter" sans-serif;
+  font-size: 6rem;
+  /* font-family: "Inter" sans-serif; */
+  /* font-family: 'Playfair', serif; */
+
   font-weight: 800;
+  display: flex;
+  line-height:4.3rem;
   /* background: rgb(0, 10, 108);
   background: -webkit-linear-gradient(
     rgb(255, 255, 255) 15%,
