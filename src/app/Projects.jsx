@@ -65,7 +65,7 @@ const ProjectCard = () => {
                 flexWrap: "wrap",
               }}
             >
-              <div>
+              <div style={{flex:1}}>
                 <h3 className={styles.portfolio_header}>{item.name}</h3>
                 <span
                   style={{
@@ -96,7 +96,7 @@ const ProjectCard = () => {
               </div>
               <Image
                 src={item.img}
-                style={{ width: "50%", height: "100%", borderRadius: "10px" }}
+                className={styles.prod_img}
               />
             </div>
           </div>

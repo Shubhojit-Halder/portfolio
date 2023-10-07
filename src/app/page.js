@@ -10,6 +10,7 @@ import org2 from "../../public/org2.png";
 import Hireme from "./Hireme";
 import About from "./About";
 import Projects from "./Projects";
+import Contact from "./Contact";
 
 const Home = () => {
   return (
@@ -79,6 +80,7 @@ const Home = () => {
       </main>
       <About />
       <Projects />
+      <Contact/>
     </>
   );
 };

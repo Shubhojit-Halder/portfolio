@@ -16,7 +16,7 @@ const Hireme = () => {
         width: "220px",
         height:"30px",
         fontSize:"1.3rem",
-        color:"#000"
+        color:"#000",
       }}
     >
       Want to hire me{" "}

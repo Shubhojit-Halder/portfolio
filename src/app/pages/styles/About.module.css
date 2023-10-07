@@ -37,12 +37,14 @@
 }
 
 .who_am_i {
+  max-width: 500px;
+  display: flex;
   margin-top: -20px;
   font-size: 1.3rem;
   /* letter-spacing: 0pt; */
   font-family: "Inter" sans-serif;
-  padding: 10px 0px;
-  margin-left: 50px;
+  padding: 10px 5px;
+  margin-left: 40px;
   background: -webkit-linear-gradient(
     0deg,
     rgb(28, 28, 28) 1%,
@@ -88,8 +90,8 @@
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  width: 400px;
-  height: 290px;
+  max-width: 350px;
+  min-height: 290px;
   position: relative;
 }
 
@@ -116,4 +118,24 @@
   /* -webkit-text-stroke: #9a9a9a; */
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+@media (max-width: 800px) {
+  .header {
+    /* margin-left: 25px; */
+    font-size: 4.5rem;
+  }
+}
+@media (max-width: 600px) {
+  .header {
+    margin-left: 25px;
+    font-size: 3.5rem;
+  }
+  .sub_heading{
+    font-size: 1.8rem;
+  }
+  .who_am_i {
+    margin-left: 25px;
+    font-size: 1.1rem;
+  }
 }
