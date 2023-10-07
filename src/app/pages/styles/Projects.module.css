@@ -3,8 +3,9 @@
     min-height: 100vh;
     /* background-color: rgb(9, 9, 9); */
     background-color: #f9f9f9;
-    padding: 50px 0px 0px 10px;
-}
+    padding: 50px 0px 60px 10px;
+
+  }
 .header {
   position: relative;
   font-family: "Inter" sans-serif;
@@ -37,9 +38,9 @@
 }
 .card{
   padding:20px;
-  margin: 10px 50px;
+  margin: 20px 0;
   width: 95%;
-  height: 400px;
+  min-height: 420px;
   backdrop-filter: blur(10px) saturate(120%);
   -webkit-backdrop-filter: blur(10px) saturate(120%);
   background-color: rgba(221, 221, 221, 0.7);
@@ -50,12 +51,16 @@
   padding-top: 20px;
   font-size: 3.5rem;
   color: rgb(38, 38, 38);
+  display: flex;
+  max-width: 500px;
 }
 .techstack{
-  width:100%;
+  width:300px;
   /* height: 200px; */
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   flex-wrap: wrap;
   margin-top: 30px;
 }
+
+@media(max-width:)
