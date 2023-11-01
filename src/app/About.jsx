@@ -18,7 +18,7 @@ const defaultOptions = {
 const About = () => {
   return (
     <>
-      <div className={styles.main}>
+      <div className={styles.main} id="about">
         {/* <div className={gc}></div> */}
         <h1 className={styles.header}>ABOUT ME</h1>
         <div className={styles.who_am_i}>

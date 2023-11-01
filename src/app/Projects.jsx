@@ -10,7 +10,7 @@ import Link from "next/link";
 const Projects = () => {
   return (
     <>
-      <section className={styles.main}>
+      <section className={styles.main} id="projects">
         <h1 className={styles.header}>Projects</h1>
         <div className={styles.card_container}>
           <ProjectCard />
