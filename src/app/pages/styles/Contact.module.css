@@ -82,22 +82,14 @@
     font-size: 4.5rem;
   }
   .container {
-    /* margin-left: 20px; */
-    /* flex-grow: 1; */
     justify-content: center;
   }
   .left{
     margin-left: 0;
-    /* min-width: 100vw; */
-    /* padding: 25px 30px; */
   }
 }
 @media (max-width: 600px) {
   .left {
-    /* max-width: 0; */
-    /* min-width: 100vw;
-    padding: 25px 30px;
-    margin-left: 0; */
     display: flex;
     justify-content: center;
     align-items: center;
