@@ -32,13 +32,13 @@ const Project = [
     github:"https://github.com/MSIT-Megatronix/ParidhiWebsite2023",
     link:"http://msitparidhi.in/"
   },
-  {
-    name: "Daakticket",
-    desc: "A social media webapp in which me and my team tried to incorporate the best features of different social media. I've mostly worked on the frontend and incorporated backend apis with the ",
-    tech: [react, node, exp, mongo],
-    img: portfolio,
-    github:"https://github.com/Shubhojit-Halder/SIH-FRONTEND-REACT-2022",
-    link:""
-  },
+  // {
+  //   name: "Daakticket",
+  //   desc: "A social media webapp in which me and my team tried to incorporate the best features of different social media. I've mostly worked on the frontend and incorporated backend apis with the ",
+  //   tech: [react, node, exp, mongo],
+  //   img: portfolio,
+  //   github:"https://github.com/Shubhojit-Halder/SIH-FRONTEND-REACT-2022",
+  //   link:""
+  // },
 ];
 export default Project;
