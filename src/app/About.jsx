@@ -18,12 +18,12 @@ const defaultOptions = {
 const About = () => {
   return (
     <>
-      <div className={styles.main}>
+      <div className={styles.main} id="about">
         {/* <div className={gc}></div> */}
         <h1 className={styles.header}>ABOUT ME</h1>
         <div className={styles.who_am_i}>
           Welcome! I'm Shubhojit, and I'm thrilled to have you here.
-          <br /> Let me share a bit about myself and what you can expect from
+          Let me share a bit about myself and what you can expect from
           this website.
         </div>
         {/* <Image src={pngegg} className={styles.underline}/> */}
@@ -34,6 +34,7 @@ const About = () => {
             justifyContent: "space-evenly",
             alignItems: "center",
             flexWrap: "wrap",
+            padding:"0px 20px"
           }}
         >
           <AboutBoxes
