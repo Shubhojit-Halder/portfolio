@@ -1,29 +1,29 @@
 .main {
-  width: 300px;
+  width: 18.75rem;
   position: absolute;
   margin: 0 auto;
-  padding: 10px;
-  margin-top: 70px;
-  left: 70px;
+  padding: 0.625rem;
+  margin-top: 4.375rem;
+  left: 4.375rem;
   top:30%;
   /* bottom: 50%; */
   /* text-align: justify; */
   font-family: "Inter", sans-serif;
-  padding: 5px;
+  padding: 0.3125rem;
 }
 .header {
   text-transform: uppercase;
-  font-size: 20px;
+  font-size: 1.25rem;
   font-weight: 600;
-  padding-bottom: 10px;
+  padding-bottom: 0.625rem;
   color: rgb(210, 210, 210);
 }
 .header:after {
   position: absolute;
   content: "";
-  height: 2.5px;
-  top: 30px;
-  left: 5px;
+  height: 0.1563rem;
+  top: 1.875rem;
+  left: 0.3125rem;
   width: 50%;
   background: rgb(0, 10, 108);
   background: linear-gradient(
@@ -44,7 +44,7 @@
   transition: 0.5s;
 }
 .content {
-  font-size: 16px;
+  font-size: 1rem;
   font-family: 'Playfair', serif;
   color: rgb(169, 169, 169);
 }

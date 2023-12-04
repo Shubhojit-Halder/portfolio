@@ -13,13 +13,16 @@
     "@emotion/styled": "^11.11.0",
     "@mui/icons-material": "^5.14.12",
     "@mui/material": "^5.14.12",
+    "framer-motion": "^10.16.4",
     "localtunnel": "^2.0.2",
     "next": "latest",
     "react": "latest",
     "react-dom": "latest",
     "react-parallax-tilt": "^1.7.169",
     "react-tilt": "^1.0.2",
-    "styled-components": "^6.0.8"
+    "react-type-animation": "^3.2.0",
+    "styled-components": "^6.0.8",
+    "typewriter-effect": "^2.21.0"
   },
   "devDependencies": {
     "eslint": "latest",
