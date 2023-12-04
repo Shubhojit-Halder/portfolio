@@ -28,7 +28,7 @@ const ProjectCard = () => {
     <>
       {Project.map((item, id) => {
         return (
-          <div className={styles.card}>
+          <div className={styles.card} key={id}>
             <div
               style={{
                 width: "140px",

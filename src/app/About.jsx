@@ -41,7 +41,7 @@ const About = () => {
             className={styles.box_header}
             heading={"Who am I?"}
             content={
-              "Currently, I am studying Electronics and Communication Engineering and I've deep passion for web development. I've been working in this field for more than two years now and it's been a wonderful journey. Recently, I was awarded top honors at the SMART INDIA HACKATHON in 2022, which has helped me to enhance my skills and knowledge further."
+              "Currently I am studying Electronics and Communication Engineering and I've deep passion for web development. I've been working in this field for more than two years now and it's been a wonderful journey. Recently, I was awarded top honors at the SMART INDIA HACKATHON in 2022, which has helped me to enhance my skills and knowledge further."
             }
           />
           <AboutBoxes
