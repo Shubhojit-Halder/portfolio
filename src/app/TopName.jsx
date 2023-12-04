@@ -8,9 +8,9 @@ const TopName = () => {
     <>
       <div>
         <motion.div
-          // initial={{x:-100}}
-          animate={{x: 100}}
-          transition={{ ease: "easeOut", duration: 2 }}
+          initial={{x:-500}}
+          animate={{x: 0}}
+          transition={{ ease: "linear", duration: 0.5 }}
           className={styles.head1}
           // transition={{ duration: 0.5, delay: 0.25 }}
         >

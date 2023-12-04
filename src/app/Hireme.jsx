@@ -8,13 +8,13 @@ const Hireme = () => {
         position: "relative",
         right:0,
         left:"85%",
-        marginTop:"-200px",
+        marginTop:"-12.5rem",
         rotate: "90deg",
-        padding: "5px",
+        padding: "0.3125rem",
         display: "flex",
         alignItems: "center",
-        width: "220px",
-        height:"30px",
+        width: "13.75rem",
+        height:"1.875rem",
         fontSize:"1.3rem",
         color:"#000",
       }}
@@ -22,9 +22,9 @@ const Hireme = () => {
       Want to hire me{" "}
       <Image
         style={{
-          marginLeft: "40px",
-          width: "15px",
-          height: "100px",
+          marginLeft: "2.5rem",
+          width: "0.9375rem",
+          height: "6.25rem",
           rotate: "-90deg",
         }}
         src={arrow}

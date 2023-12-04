@@ -2,12 +2,13 @@
 import React from "react";
 import styles from "./pages/styles/About.module.css";
 import { Tilt } from "react-tilt";
+import {motion} from "framer-motion";
 // import './TiltScale.demozap.scss';
 const defaultOptions = {
-  reverse: false, // reverse the tilt direction
+  reverse: true, // reverse the tilt direction
   max: 35, // max tilt rotation (degrees)
   perspective: 1000, // Transform perspective, the lower the more extreme the tilt gets.
-  scale: 1.7, // 2 = 200%, 1.5 = 150%, etc..
+  scale: 1.2, // 2 = 200%, 1.5 = 150%, etc..
   speed: 1000, // Speed of the enter/exit transition
   transition: true, // Set a transition on enter/exit.
   axis: null, // What axis should be disabled. Can be X or Y.
@@ -22,9 +23,8 @@ const About = () => {
         {/* <div className={gc}></div> */}
         <h1 className={styles.header}>ABOUT ME</h1>
         <div className={styles.who_am_i}>
-          Welcome! I'm Shubhojit, and I'm thrilled to have you here.
-          Let me share a bit about myself and what you can expect from
-          this website.
+          Welcome! I'm Shubhojit, and I'm thrilled to have you here. Let me
+          share a bit about myself and what you can expect from this website.
         </div>
         {/* <Image src={pngegg} className={styles.underline}/> */}
         {/* <div className={styles.colour_circle}></div> */}
@@ -34,7 +34,7 @@ const About = () => {
             justifyContent: "space-evenly",
             alignItems: "center",
             flexWrap: "wrap",
-            padding:"0px 20px"
+            padding: "0px 20px",
           }}
         >
           <AboutBoxes
@@ -68,10 +68,15 @@ const AboutBoxes = ({ heading, content }) => {
   return (
     <>
       <Tilt options={defaultOptions}>
-        <div className={styles.box}>
+        <motion.div
+          className={styles.box}
+          initial={{ y: +500,x:-200 }}
+          animate={{ y: 0,x:0 }}
+          transition={{ ease: "easeInOut", duration: 0.5 }}
+        >
           <div className={styles.sub_heading}>{heading}</div>
           <div className={styles.sub_content}>{content}</div>
-        </div>
+        </motion.div>
       </Tilt>
     </>
   );

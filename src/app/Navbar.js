@@ -18,7 +18,13 @@ const Navbar = () => {
           >
             <li>About</li>
           </Link>
-          <li>Resume</li>
+          <Link
+            href={"#resume"}
+            className={`link ${pathname === "#resume" ? "active" : ""}`}
+          >
+            <li>Resume</li>
+          </Link>
+
           <Link
             href={"#projects"}
             className={`${pathname === "#projects" ? "active" : ""}`}

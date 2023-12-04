@@ -8,19 +8,19 @@
 }
 .head1 {
   text-align: left;
-  font-size: 32px;
+  font-size: 2rem;
   background: -webkit-linear-gradient(#3e3e3e, #151515);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 .head2 {
-  font-size: 80px;
+  font-size: 5rem;
   /* font-family: "Inter" sans-serif; */
   /* font-family: 'Playfair', serif; */
 
   font-weight: 800;
   display: flex;
-  line-height: 68.8px;
+  line-height: 4.3rem;
   /* background: rgb(0, 10, 108);
   background: -webkit-linear-gradient(
     rgb(255, 255, 255) 15%,
@@ -49,7 +49,7 @@
 
 @media (max-width: 37.5rem) {
   .head2 {
-    font-size: 72px;
+    font-size: 4.5rem;
   }
   .head1,
   .head2 {

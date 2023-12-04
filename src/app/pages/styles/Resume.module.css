@@ -1,0 +1,86 @@
+.resume_main {
+  height: 90vh;
+  background-color: #fdfdfd;
+  /* padding-top: 3.125rem; */
+  padding: 3.125rem;
+}
+.all_cards {
+  display: flex;
+  justify-content: space-between;
+  /* align-items: center; */
+  flex-wrap: wrap;
+}
+.header {
+  position: relative;
+  font-family: "Inter" sans-serif;
+  text-transform: uppercase;
+  padding: 10px 0px 10px 0px;
+
+  font-size: 5rem;
+  /* margin-top: 70px; */
+  z-index: 1;
+  background: rgb(37, 1, 115);
+  background: radial-gradient(
+    circle,
+    rgba(37, 1, 115, 1) 1%,
+    rgba(53, 1, 138, 1) 10%,
+    rgba(85, 24, 155, 1) 24%,
+    rgba(172, 48, 130, 1) 35%,
+    rgba(211, 39, 82, 1) 71%,
+    rgba(253, 29, 29, 1) 100%,
+    rgba(252, 176, 69, 1) 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.small_head {
+  font-size: 1.5rem;
+  margin-top: 1.25rem;
+}
+.edu_sec {
+  margin-top: 0.9375rem;
+  color: #303030;
+}
+.card {
+  width: 21.875rem;
+  height: 25rem;
+  background: #d3d3d3;
+}
+
+.mid_line {
+  width: 0.125rem;
+  height: 15rem;
+  background: #101010;
+  margintop: 1.5625rem;
+}
+
+@media (max-width: 50rem) {
+  .mid_line { 
+    display: none;
+  }
+  
+  /* .all_cards {
+    margin-left: 1.5625rem;
+  } */
+  .portfolio_header {
+    font-size: 2.5rem;
+  }
+  .header {
+    font-size: 4.5rem;
+  }
+}
+@media (max-width: 37.5rem) {
+    .mid_line { 
+        display: none;
+      }
+  .portfolio_header {
+    font-size: 2rem;
+  }
+  .header {
+    font-size: 3.5rem;
+    margin-left: 1.5625rem;
+  }
+  .prod_img {
+    margin-top: 1.875rem;
+  }
+}
