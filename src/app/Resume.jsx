@@ -5,7 +5,7 @@ const Resume = () => {
     <>
       <div className={styles.resume_main} id="resume">
         <h1 className={styles.header}>RESUME</h1>
-        <div className={styles.all_cards}>
+        {/* <div className={styles.all_cards}>
           <div className={styles.education}>
             <h3 className={styles.small_head}>Education</h3>
             <div className={styles.edu_sec}>
@@ -71,7 +71,7 @@ const Resume = () => {
                     backgroundColor: "blue",
                   }}
                 />
-                {/* 90% */}
+                
               </p>
             </div>
             <div className={styles.edu_sec}>
@@ -90,7 +90,7 @@ const Resume = () => {
                     backgroundColor: "blue",
                   }}
                 />
-                {/* 80% */}
+                
               </p>
             </div>
             <div className={styles.edu_sec}>
@@ -109,11 +109,11 @@ const Resume = () => {
                     backgroundColor: "blue",
                   }}
                 />
-                {/* 80% */}
+                
               </p>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
     </>
   );

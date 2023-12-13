@@ -21,6 +21,7 @@ const Hireme = () => {
     >
       Want to hire me{" "}
       <Image
+      // alt="arrow pointing downwards"
         style={{
           marginLeft: "2.5rem",
           width: "0.9375rem",

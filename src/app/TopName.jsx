@@ -3,6 +3,7 @@ import React from "react";
 import styles from "./pages/styles/Topname.module.css";
 import { motion } from "framer-motion";
 import { Button } from "@mui/material";
+import { TypewriterClass } from "typewriter-effect";
 const TopName = () => {
   return (
     <>
@@ -22,6 +23,7 @@ const TopName = () => {
           SHUBHOJIT
           <br /> HALDER
         </div>
+        
         <div className={styles.head1}>A Fullstack Developer.</div>
         {/* <Button variant="contained" style={{background:"#560bad",}} >View Resume</Button> */}
       </div>

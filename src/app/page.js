@@ -22,6 +22,8 @@ const Home = () => {
           <TopName />
           <div className={styles.imgwrapper}>
             <Image
+              alt="an img"
+              priority={true}
               src={org2}
               style={{
                 position: "relative",
@@ -32,24 +34,26 @@ const Home = () => {
                 // height: "390px",
                 width: "300px",
                 height: "450px",
-                borderRadius:"30%"
+                borderRadius: "30%",
                 // filter: "contrast(1%)",
                 // position: "absolute",
                 // right: 0,
               }}
             />
             <Image
+              alt="a design element"
               src={squi}
               style={{
                 position: "relative",
                 top: -300,
-                right:40,
+                right: 40,
                 // filter: "invert(90%) blur(1px)",
                 width: "100px",
                 height: "100px",
               }}
             />
             <Image
+              alt="a design element"
               src={dothr}
               style={{
                 position: "relative",
@@ -80,9 +84,9 @@ const Home = () => {
         /> */}
       </main>
       <About />
-      <Resume/>
+      <Resume />
       <Projects />
-      <Contact/>
+      <Contact />
     </>
   );
 };
