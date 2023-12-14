@@ -12,6 +12,8 @@ import About from "./About";
 import Projects from "./Projects";
 import Contact from "./Contact";
 import Resume from "./Resume";
+import NewCards from "./NewCards";
+import NewContact from "./NewContact";
 
 const Home = () => {
   return (
@@ -65,28 +67,16 @@ const Home = () => {
               }}
             />
           </div>
-          {/* <BoxComp /> */}
         </div>
         <Hireme />
-        {/* <Image
-          src={dot1}
-          style={{
-            position: "relative",
-            // bottom: 0,
-            top: 100,
-            left: -50,
-            rotate: "180deg",
-            filter: "grayscale(100%)",
-            opacity: 0.4,
-            width: "250px",
-            height: "250px",
-          }}
-        /> */}
+        
       </main>
+      {/* <NewCards/> */}
+      <Projects />
       <About />
       <Resume />
-      <Projects />
-      <Contact />
+      <NewContact/>
+      {/* <Contact /> */}
     </>
   );
 };

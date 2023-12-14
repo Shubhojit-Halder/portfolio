@@ -11,6 +11,7 @@
   flex-wrap: wrap;
 }
 .header {
+  text-align: center;
   position: relative;
   font-family: "Inter" sans-serif;
   text-transform: uppercase;
@@ -50,7 +51,7 @@
 .mid_line {
   width: 0.125rem;
   height: 15rem;
-  background: #101010;
+  background: #10101081;
   margintop: 1.5625rem;
 }
 
@@ -78,7 +79,7 @@
   }
   .header {
     font-size: 3.5rem;
-    margin-left: 1.5625rem;
+    /* margin-left: 1.5625rem; */
   }
   .prod_img {
     margin-top: 1.875rem;

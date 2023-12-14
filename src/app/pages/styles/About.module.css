@@ -1,11 +1,10 @@
 .main {
   min-height: 100vh;
-  padding: 0.625rem;
+  /* padding: 0.625rem; */
   padding-bottom: 3.125rem;
   width: 100vw;
   overflow-x: hidden;
-  /* background-color: #090909; */
-  background-color: #f1f1f1;
+  background-color: #fefefe;
   /* display: flex;
   justify-content: center;
   align-items: center; */
@@ -13,11 +12,12 @@
   /* flex-direction: column; */
 }
 .header {
+  text-align: center;
   position: relative;
   font-family: "Inter" sans-serif;
   text-transform: uppercase;
   padding: 0.625rem 0rem;
-  margin-left: 3.125rem;
+  /* margin-left: 3.125rem; */
   font-size: 80px;
   margin-top: 2.5rem;
   z-index: 1;
@@ -60,30 +60,14 @@
   -webkit-text-fill-color: transparent;
   /* text-align: center; */
 }
-.colour_circle {
-  width: 17.5rem;
-  height: 17.5rem;
-  margin-left: -5rem;
-  border-radius: 50%;
-  position: absolute;
-  /* left: 90%; */
-  background: -webkit-linear-gradient(
-    0deg,
-    #f94624,
-    #ff0050,
-    #ff0083,
-    #f200bd,
-    #b207f9
-  );
-}
 
 .box {
-  /* background: rgb(27, 27, 27); */
+
   backdrop-filter: blur(0.625rem) saturate(120%);
   -webkit-backdrop-filter: blur(0.625rem) saturate(120%);
-  background-color: rgba(221, 221, 221, 0.7);
+  background-color: rgba(234, 234, 234, 0.874);
+
   border-radius: 0.75rem;
-  border: 0.0625rem solid rgba(209, 213, 219, 0.3);
   border-radius: 0.625rem;
   margin-top: 3.125rem;
   padding: 1.25rem 1.25rem;
@@ -94,7 +78,9 @@
   min-height: 18.125rem;
   position: relative;
 }
-
+.blue {
+  border: 0.225rem solid #11baaf;
+}
 .sub_heading {
   font-size: 35.2px;
   font-weight: 500;
@@ -113,11 +99,12 @@
   font-size: 1rem;
   text-align: justify;
   line-height: 20.8px;
-  color: #cbcbcb;
-  background: -webkit-linear-gradient(90deg, #262626, #616161);
+  /* color: #cbcbcb; */
+  color: #2c2c2c;
+  /* background: -webkit-linear-gradient(90deg, #262626, #616161); */
   /* -webkit-text-stroke: #9a9a9a; */
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  /* -webkit-background-clip: text; */
+  /* -webkit-text-fill-color: transparent; */
 }
 
 @media (max-width: 50rem) {
@@ -128,10 +115,10 @@
 }
 @media (max-width: 37.5rem) {
   .header {
-    margin-left: 1.5625rem;
+    /* margin-left: 1.5625rem; */
     font-size: 56px;
   }
-  .sub_heading{
+  .sub_heading {
     font-size: 28.8px;
   }
   .who_am_i {

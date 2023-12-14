@@ -2,7 +2,8 @@
 import React from "react";
 import styles from "./pages/styles/About.module.css";
 import { Tilt } from "react-tilt";
-import {motion} from "framer-motion";
+import { motion } from "framer-motion";
+import { red } from "@mui/material/colors";
 // import './TiltScale.demozap.scss';
 const defaultOptions = {
   reverse: true, // reverse the tilt direction
@@ -22,10 +23,10 @@ const About = () => {
       <div className={styles.main} id="about">
         {/* <div className={gc}></div> */}
         <h1 className={styles.header}>ABOUT ME</h1>
-        <div className={styles.who_am_i}>
+        {/* <div className={styles.who_am_i}>
           Welcome! I'm Shubhojit, and I'm thrilled to have you here. Let me
           share a bit about myself and what you can expect from this website.
-        </div>
+        </div> */}
         {/* <Image src={pngegg} className={styles.underline}/> */}
         {/* <div className={styles.colour_circle}></div> */}
         <div
@@ -38,6 +39,7 @@ const About = () => {
           }}
         >
           <AboutBoxes
+            border={"#14c5aa40"}
             className={styles.box_header}
             heading={"Who am I?"}
             content={
@@ -45,6 +47,7 @@ const About = () => {
             }
           />
           <AboutBoxes
+            border={"#ea12dc38"}
             className={styles.box_header}
             heading={"My Philosophy"}
             content={
@@ -52,6 +55,7 @@ const About = () => {
             }
           />
           <AboutBoxes
+            border={"#b7e4163c"}
             className={styles.box_header}
             heading={"Future Goals"}
             content={
@@ -64,14 +68,19 @@ const About = () => {
   );
 };
 
-const AboutBoxes = ({ heading, content }) => {
+const AboutBoxes = ({ heading, content, border }) => {
   return (
     <>
       <Tilt options={defaultOptions}>
         <motion.div
+          style={{
+            // border: `0.225rem solid ${border}`,/
+            // background: border,
+            boxShadow: "0px 4px 5px #3d3d3d3e",
+          }}
           className={styles.box}
-          initial={{ y: +500,x:-200 }}
-          animate={{ y: 0,x:0 }}
+          initial={{ y: +500, x: -200 }}
+          animate={{ y: 0, x: 0 }}
           transition={{ ease: "easeInOut", duration: 0.5 }}
         >
           <div className={styles.sub_heading}>{heading}</div>
