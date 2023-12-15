@@ -7,7 +7,7 @@ import dot1 from "../../public/dot1.png";
 import TopName from "./TopName";
 import org1 from "../../public/org1.png";
 import org2 from "../../public/org2.png";
-import Hireme from "./Hireme";
+import Hireme, { ScrollTop } from "./Hireme";
 import About from "./About";
 import Projects from "./Projects";
 import Contact from "./Contact";
@@ -76,6 +76,7 @@ const Home = () => {
       <About />
       <Resume />
       <NewContact/>
+      <ScrollTop/>
       {/* <Contact /> */}
     </>
   );

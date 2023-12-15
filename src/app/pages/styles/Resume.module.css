@@ -1,5 +1,5 @@
 .resume_main {
-  height: 90vh;
+  min-height: 100%;
   background-color: #fdfdfd;
   /* padding-top: 3.125rem; */
   padding: 3.125rem;
@@ -9,6 +9,9 @@
   justify-content: space-between;
   /* align-items: center; */
   flex-wrap: wrap;
+}
+.education, .experience,.languages{
+  padding: 10px 20px;
 }
 .header {
   text-align: center;
@@ -48,15 +51,19 @@
   background: #d3d3d3;
 }
 
-.mid_line {
+.mid_line1, .mid_line2 {
   width: 0.125rem;
   height: 15rem;
   background: #10101081;
-  margintop: 1.5625rem;
+  margin-top: 1.5625rem;
 }
-
+@media (max-width:61.25rem) {
+  .mid_line2{
+    display: none;
+  }
+}
 @media (max-width: 50rem) {
-  .mid_line { 
+  .mid_line1 { 
     display: none;
   }
   
