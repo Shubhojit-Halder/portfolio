@@ -7,10 +7,13 @@ import dot1 from "../../public/dot1.png";
 import TopName from "./TopName";
 import org1 from "../../public/org1.png";
 import org2 from "../../public/org2.png";
-import Hireme from "./Hireme";
+import Hireme, { ScrollTop } from "./Hireme";
 import About from "./About";
 import Projects from "./Projects";
 import Contact from "./Contact";
+import Resume from "./Resume";
+import NewCards from "./NewCards";
+import NewContact from "./NewContact";
 
 const Home = () => {
   return (
@@ -21,6 +24,8 @@ const Home = () => {
           <TopName />
           <div className={styles.imgwrapper}>
             <Image
+              alt="an img"
+              priority={true}
               src={org2}
               style={{
                 position: "relative",
@@ -31,24 +36,26 @@ const Home = () => {
                 // height: "390px",
                 width: "300px",
                 height: "450px",
-                borderRadius:"30%"
+                borderRadius: "30%",
                 // filter: "contrast(1%)",
                 // position: "absolute",
                 // right: 0,
               }}
             />
             <Image
+              alt="a design element"
               src={squi}
               style={{
                 position: "relative",
                 top: -300,
-                right:40,
+                right: 40,
                 // filter: "invert(90%) blur(1px)",
                 width: "100px",
                 height: "100px",
               }}
             />
             <Image
+              alt="a design"
               src={dothr}
               style={{
                 position: "relative",
@@ -60,27 +67,17 @@ const Home = () => {
               }}
             />
           </div>
-          {/* <BoxComp /> */}
         </div>
         <Hireme />
-        {/* <Image
-          src={dot1}
-          style={{
-            position: "relative",
-            // bottom: 0,
-            top: 100,
-            left: -50,
-            rotate: "180deg",
-            filter: "grayscale(100%)",
-            opacity: 0.4,
-            width: "250px",
-            height: "250px",
-          }}
-        /> */}
+        
       </main>
-      <About />
+      {/* <NewCards/> */}
       <Projects />
-      <Contact/>
+      <About />
+      <Resume />
+      <NewContact/>
+      <ScrollTop/>
+      {/* <Contact /> */}
     </>
   );
 };

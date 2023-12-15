@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+
 import styles from "./pages/styles/Navbar.module.css";
 import Link from "next/link";
 // import {useScroll} from "next/router";
@@ -18,7 +18,13 @@ const Navbar = () => {
           >
             <li>About</li>
           </Link>
-          <li>Resume</li>
+          <Link
+            href={"#resume"}
+            className={`link ${pathname === "#resume" ? "active" : ""}`}
+          >
+            <li>Resume</li>
+          </Link>
+
           <Link
             href={"#projects"}
             className={`${pathname === "#projects" ? "active" : ""}`}
