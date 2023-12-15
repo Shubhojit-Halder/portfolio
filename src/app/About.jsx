@@ -23,12 +23,6 @@ const About = () => {
       <div className={styles.main} id="about">
         {/* <div className={gc}></div> */}
         <h1 className={styles.header}>ABOUT ME</h1>
-        {/* <div className={styles.who_am_i}>
-          Welcome! I'm Shubhojit, and I'm thrilled to have you here. Let me
-          share a bit about myself and what you can expect from this website.
-        </div> */}
-        {/* <Image src={pngegg} className={styles.underline}/> */}
-        {/* <div className={styles.colour_circle}></div> */}
         <div
           style={{
             display: "flex",
