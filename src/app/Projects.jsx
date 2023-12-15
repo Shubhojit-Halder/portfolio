@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+
 import styles from "./pages/styles/Projects.module.css";
 import github from "../../public/github1.png";
 import weblink from "../../public/weblink.png";

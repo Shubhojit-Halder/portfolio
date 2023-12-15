@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+
 import styles from "./pages/styles/About.module.css";
 import { Tilt } from "react-tilt";
 import { motion } from "framer-motion";

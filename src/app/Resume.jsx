@@ -1,4 +1,3 @@
-import React from "react";
 import styles from "./pages/styles/Resume.module.css";
 const Resume = () => {
   return (
