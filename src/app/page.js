@@ -55,7 +55,7 @@ const Home = () => {
               }}
             />
             <Image
-              alt="a design element"
+              alt="a design"
               src={dothr}
               style={{
                 position: "relative",

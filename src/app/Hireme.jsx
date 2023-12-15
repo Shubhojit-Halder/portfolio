@@ -56,7 +56,7 @@ const Button = styled.button`
   cursor: pointer;
   position: fixed;
   margin: 1.25rem;
-  
+
   z-index: 15;
   bottom: 0;
   right: 0;
@@ -70,7 +70,7 @@ const Button = styled.button`
   .btnArrow {
     color: #fff;
   }
-  @media (max-width:31.25rem) {
+  @media (max-width: 31.25rem) {
     margin-bottom: 80px;
   }
 `;

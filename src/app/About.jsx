@@ -4,7 +4,7 @@ import styles from "./pages/styles/About.module.css";
 import { Tilt } from "react-tilt";
 import { motion } from "framer-motion";
 import { red } from "@mui/material/colors";
-// import './TiltScale.demozap.scss';
+// import &apos;./TiltScale.demozap.scss';
 const defaultOptions = {
   reverse: true, // reverse the tilt direction
   max: 35, // max tilt rotation (degrees)
@@ -37,7 +37,7 @@ const About = () => {
             className={styles.box_header}
             heading={"Who am I?"}
             content={
-              "Currently I am studying Electronics and Communication Engineering and I've deep passion for web development. I've been working in this field for more than two years now and it's been a wonderful journey. Recently, I was awarded top honors at the SMART INDIA HACKATHON in 2022, which has helped me to enhance my skills and knowledge further."
+              "Currently I am studying Electronics and Communication Engineering and have deep passion for web development. It has been a wonderful journey working in this field for more than two years now. Recently, I was awarded top honors at the SMART INDIA HACKATHON in 2022, which has helped me to enhance my skills and knowledge further."
             }
           />
           <AboutBoxes
@@ -45,7 +45,7 @@ const About = () => {
             className={styles.box_header}
             heading={"My Philosophy"}
             content={
-              "I strongly believe in the effectiveness of hard work and commitment, which motivates me to design websites and web applications that are both visually appealing and functional. I am convinced that persistence and consistency will always yield positive results, and I apply this principle to every project that I take on."
+              `I strongly believe in the effectiveness of hard work and commitment, which motivates me to design websites and web applications that are both visually appealing and functional. I am convinced that persistence and consistency will always yield positive results, and I apply this principle to every project that I take on.`
             }
           />
           <AboutBoxes
