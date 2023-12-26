@@ -100,7 +100,7 @@ const ResumeWrapper = styled.div`
 `;
 const Card = ({ topImg, cardData = [] }) => {
   return (
-    <CardWrapper>
+    <CardWrapper id="resume">
       <Image
         src={topImg}
         style={{

@@ -13,10 +13,10 @@ const Navbar = () => {
       <div className={styles.nav}>
         <ul className={styles.nav_ul}>
           <Link
-            href={"#about"}
-            className={`link ${pathname === "#about" ? "active" : ""}`}
+            href={"#projects"}
+            className={`${pathname === "#projects" ? "active" : ""}`}
           >
-            <li>About</li>
+            <li>Projects</li>
           </Link>
           <Link
             href={"#resume"}
@@ -26,10 +26,10 @@ const Navbar = () => {
           </Link>
 
           <Link
-            href={"#projects"}
-            className={`${pathname === "#projects" ? "active" : ""}`}
+            href={"#about"}
+            className={`link ${pathname === "#about" ? "active" : ""}`}
           >
-            <li>Projects</li>
+            <li>About</li>
           </Link>
           <Link
             href={"#contact"}
