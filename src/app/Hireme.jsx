@@ -80,9 +80,12 @@ const ScrollTop = () => {
     setHeight(document.documentElement.scrollTop);
     // console.log(height);
   };
-  window.onscroll = function () {
-    getHeight();
-  };
+  useEffect(()=>{
+    window.onscroll = function () {
+      getHeight();
+    };
+  })
+  
   return (
     <Button
       // initial={{ opacity: 0, y: 200 }}
