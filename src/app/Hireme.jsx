@@ -78,7 +78,7 @@ const ScrollTop = () => {
   const [height, setHeight] = useState(0);
   const getHeight = () => {
     setHeight(document.documentElement.scrollTop);
-    console.log(height);
+    // console.log(height);
   };
   window.onscroll = function () {
     getHeight();
