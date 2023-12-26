@@ -14,13 +14,24 @@
   -webkit-text-fill-color: transparent;
 }
 .head2 {
+  padding-bottom:1rem ;
   font-size: 5rem;
+  .cover{
+    width: 25rem;
+    height: 4.0625rem;
+    border-radius: 0.3125rem;
+    /* margin: 0.3125rem 0rem; */
+    position: absolute;
+    margin-top: -1.25rem;
+    background: #cfcfcf;
+  }
   /* font-family: "Inter" sans-serif; */
   /* font-family: 'Playfair', serif; */
 
   font-weight: 800;
   display: flex;
-  line-height: 4.3rem;
+  flex-direction: column;
+  line-height: 2.2rem;
   /* background: rgb(0, 10, 108);
   background: -webkit-linear-gradient(
     rgb(255, 255, 255) 15%,
@@ -54,6 +65,6 @@
   .head1,
   .head2 {
     margin-left: 0rem;
-    padding: 0rem 1.25rem;
+    padding: 0.8rem 1.25rem;
   }
 }

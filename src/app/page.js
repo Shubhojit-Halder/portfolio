@@ -14,6 +14,7 @@ import Contact from "./Contact";
 import Resume from "./Resume";
 import NewCards from "./NewCards";
 import NewContact from "./NewContact";
+import ResumeNew from "./ResumeNew";
 
 const Home = () => {
   return (
@@ -74,7 +75,7 @@ const Home = () => {
       {/* <NewCards/> */}
       <Projects />
       <About />
-      <Resume />
+      <ResumeNew />
       <NewContact/>
       <ScrollTop/>
       {/* <Contact /> */}
