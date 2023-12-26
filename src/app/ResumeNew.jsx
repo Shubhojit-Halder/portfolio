@@ -100,7 +100,7 @@ const ResumeWrapper = styled.div`
 `;
 const Card = ({ topImg, cardData = [] }) => {
   return (
-    <CardWrapper id="resume">
+    <CardWrapper>
       <Image
         src={topImg}
         style={{
@@ -133,56 +133,62 @@ const Card = ({ topImg, cardData = [] }) => {
 const ResumeNew = () => {
   return (
     <>
-      <h1 className={styles.header}>RESUME</h1>
-      <ResumeWrapper>
-        <div className="rows">
-          <Card topImg={edu} cardData={EduData} />
-          <Card topImg={job} cardData={ExpData} />
-        </div>
-        <div className="rows">
-        <Card topImg={trophy} cardData={Achievements} />
-          <CardWrapper>
-            <Image
-              src={codeSp}
-              style={{
-                width: "3.75rem",
-                height: "3.75rem",
-                borderRadius: "50%",
-                position: "absolute",
-                top: -30,
-                left: "5.7813rem",
-              }}
-              alt="logo"
-            />
-            <div style={{display:"flex",justifyContent:"space-evenly",flexWrap:"wrap"}}>
-              {[
-                { img: c, val: 90 },
-                { img: js, val: 85 },
-                { img: python, val: 70 },
-                { img: react, val: 85 },
-                { img: node, val: 80 },
-                { img: exp, val: 80 },
-                { img: mysql, val: 85 },
-                { img: mongo, val: 87 },
-                { img: html, val: 93 },
-                { img: css, val: 90 },
-                
-              ].map((data, id) => {
-                return (
-                  <CircularProgress
-                    key={id + data}
-                    size="md"
-                    determinate
-                    value={data.val}
-                    sx={{ color: "#33cccc", margin: "5px" }}
-                  >
-                    <Image src={data.img} width={20} height={20} alt="logo" />
-                  </CircularProgress>
-                );
-              })}
-            </div>
-          </CardWrapper>
-          {/* <CardWrapper>
+      <div id="resume">
+        <h1 className={styles.header}>RESUME</h1>
+        <ResumeWrapper>
+          <div className="rows">
+            <Card topImg={edu} cardData={EduData} />
+            <Card topImg={job} cardData={ExpData} />
+          </div>
+          <div className="rows">
+            <Card topImg={trophy} cardData={Achievements} />
+            <CardWrapper>
+              <Image
+                src={codeSp}
+                style={{
+                  width: "3.75rem",
+                  height: "3.75rem",
+                  borderRadius: "50%",
+                  position: "absolute",
+                  top: -30,
+                  left: "5.7813rem",
+                }}
+                alt="logo"
+              />
+              <div
+                style={{
+                  display: "flex",
+                  justifyContent: "space-evenly",
+                  flexWrap: "wrap",
+                }}
+              >
+                {[
+                  { img: c, val: 90 },
+                  { img: js, val: 85 },
+                  { img: python, val: 70 },
+                  { img: react, val: 85 },
+                  { img: node, val: 80 },
+                  { img: exp, val: 80 },
+                  { img: mysql, val: 85 },
+                  { img: mongo, val: 87 },
+                  { img: html, val: 93 },
+                  { img: css, val: 90 },
+                ].map((data, id) => {
+                  return (
+                    <CircularProgress
+                      key={id + data}
+                      size="md"
+                      determinate
+                      value={data.val}
+                      sx={{ color: "#33cccc", margin: "5px" }}
+                    >
+                      <Image src={data.img} width={20} height={20} alt="logo" />
+                    </CircularProgress>
+                  );
+                })}
+              </div>
+            </CardWrapper>
+            {/* <CardWrapper>
             <Image
               src={profile}
               style={{
@@ -196,10 +202,11 @@ const ResumeNew = () => {
               alt="logo"
             />
           </CardWrapper> */}
-          {/* <Card topImg={codeSp} />
+            {/* <Card topImg={codeSp} />
           <Card topImg={profile} /> */}
-        </div>
-      </ResumeWrapper>
+          </div>
+        </ResumeWrapper>
+      </div>
     </>
   );
 };

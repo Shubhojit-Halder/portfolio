@@ -12,6 +12,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+
+        <title>Portfolio-Shubhojit Halder</title>
+        {/* <link rel="icon" href="/sh.jpg" sizes="any" type="image/jpg"/> */}
       <Head>
         {/* <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin /> */}

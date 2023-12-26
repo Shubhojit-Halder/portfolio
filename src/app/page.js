@@ -74,8 +74,8 @@ const Home = () => {
       </main>
       {/* <NewCards/> */}
       <Projects />
-      <About />
       <ResumeNew />
+      <About />
       <NewContact/>
       <ScrollTop/>
       {/* <Contact /> */}
