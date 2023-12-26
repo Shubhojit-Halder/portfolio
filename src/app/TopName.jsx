@@ -19,7 +19,7 @@ const TopName = () => {
         </motion.div>
         <div className={styles.head2}>
           <p >
-            <motion.p
+            <motion.span
               initial={{ width: "150px", opacity: 1 }}
               animate={{ width: 0 }}
               transition={{ delay: 0.6, duration: 0.5, ease: "easeIn" }}
@@ -30,7 +30,7 @@ const TopName = () => {
           <br />
           <p>
             {" "}
-            <motion.p
+            <motion.span
               initial={{ width: "395px", opacity: 1 }}
               animate={{ width: 0}}
               transition={{ delay: 1, duration: 0.5, ease: "easeIn" }}
@@ -41,7 +41,7 @@ const TopName = () => {
           <br />
           <span />{" "}
           <p>
-            <motion.p
+            <motion.span
               initial={{ width: "300px", opacity: 1 }}
               animate={{ width: 0 }}
               transition={{ delay: 1.3, duration: 0.5, ease: "easeIn" }}
