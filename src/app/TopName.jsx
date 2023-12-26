@@ -56,8 +56,8 @@ const TopName = () => {
           <Typewriter
             options={{
               strings: [
+                "Coding Enthusiast",
                 "Fullstack Developer",
-                "Frontend Developer",
                 "Software Enginner",
               ],
               autoStart: true,

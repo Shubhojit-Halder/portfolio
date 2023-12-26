@@ -47,6 +47,20 @@ const ExpData = [
     gpa: "",
   },
 ];
+const Achievements = [
+  {
+    name: "Winner - Smart India Hackthon",
+    sp1: "Software edition",
+    sp2: "June,2022 - August,2022",
+    gpa: "",
+  },
+  {
+    name: "Winner - TechXtra,2021",
+    sp1: "Web development competition",
+    sp2: "July,2021",
+    gpa: "",
+  },
+];
 
 const CardWrapper = styled.div`
   width: 15.625rem;
@@ -126,7 +140,7 @@ const ResumeNew = () => {
           <Card topImg={job} cardData={ExpData} />
         </div>
         <div className="rows">
-        <Card topImg={trophy} cardData={ExpData} />
+        <Card topImg={trophy} cardData={Achievements} />
           <CardWrapper>
             <Image
               src={codeSp}

@@ -7,6 +7,7 @@ import pin from "../../public/pin.png";
 import Image from "next/image";
 import { TextField } from "@mui/material";
 import Link from "next/link";
+import CodeIcon from '@mui/icons-material/Code';
 import { Facebook, Instagram, LinkedIn } from "@mui/icons-material";
 const NewContact = () => {
   const [name, setName] = useState("");
@@ -30,7 +31,7 @@ const NewContact = () => {
         <div className={styles.secondary}>
           <div className={styles.left}>
             <h1 className={styles.h1}>
-              Fill the from, <br /> it's easy.
+              Fill the form, <br /> it's easy.
             </h1>
             <form action="#" method="post">
               <div>
@@ -98,6 +99,14 @@ const NewContact = () => {
                     href={"https://www.instagram.com/_s.h.u.b.h.o.j.i.t/"}
                   >
                     <Instagram className={styles.icons} />
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    target="_"
+                    href={"https://auth.geeksforgeeks.org/user/shubhojit357"}
+                  >
+                    <CodeIcon className={styles.icons} />
                   </Link>
                 </li>
               </ul>
