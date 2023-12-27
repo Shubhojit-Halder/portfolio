@@ -7,17 +7,35 @@ import pin from "../../public/pin.png";
 import Image from "next/image";
 import { TextField } from "@mui/material";
 import Link from "next/link";
-import CodeIcon from '@mui/icons-material/Code';
+import CodeIcon from "@mui/icons-material/Code";
 import { Facebook, Instagram, LinkedIn } from "@mui/icons-material";
+import axios from "axios";
 const NewContact = () => {
-  const [name, setName] = useState("");
-  const [email, setEmail] = useState("");
-  const [message, setMessage] = useState("");
+  const [newData, setData] = useState({ names: "", email: "", message: "" });
+  // const [email, setEmail] = useState("");
+  // const [message, setMessage] = useState("");
+  // const handleSubmit = async (event) => {
+  //   event.preventDefault();
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    // Perform your form submission logic here
-    console.log("Submitted:", { name, email, message });
+  //   // const formData = new FormData(event.target);
+  //   const response = await axios.post("/api/submit", newData);
+
+  //   // Handle response if necessary
+  //   const data = await response.json();
+  //   // Perform your form submission logic here
+  //   console.log(data);
+  //   console.log("Submitted:", newData);
+  // };
+  const handleChange = (event) => {
+    let value = event.target.value;
+    let name = event.target.name;
+
+    setData((prevalue) => {
+      return {
+        ...prevalue, // Spread Operator
+        [name]: value,
+      };
+    });
   };
   return (
     <>
@@ -33,28 +51,34 @@ const NewContact = () => {
             <h1 className={styles.h1}>
               Fill the form, <br /> it's easy.
             </h1>
-            <form action="#" method="post">
+            <form action="#">
               <div>
                 {" "}
                 <input
                   type="text"
                   placeholder="Name"
+                  name="names"
                   className={styles.input}
+                  onChange={handleChange}
                 />
               </div>
               <div>
                 {" "}
                 <input
-                  type="text"
+                  type="email"
+                  name="email"
                   placeholder="Email"
                   className={styles.input}
+                  onChange={handleChange}
                 />
               </div>
               <div>
                 {" "}
                 <textarea
+                  name="message"
                   className={styles.textarea}
                   placeholder="Enter your message here."
+                  onChange={handleChange}
                 ></textarea>
               </div>
               <button type="submit" className={styles.button}>
@@ -66,10 +90,11 @@ const NewContact = () => {
           <div className={styles.right}>
             <h1 className={styles.h1}>Get in touch</h1>
             <p className={styles.content}>
-              I'm always eager to collaborate on exciting projects or just have
-              a chat about the latest developments in the tech world. Feel free
-              to reach out if you share a passion for web development,
-              technology, or if you just want to connect!
+              I'm always eager to collaborate on exciting projects or just to
+              have a chat about the latest developments in the tech world. Feel
+              free to reach out if you share a passion for web development,
+              technology, or if you just want to connect or even if you have
+              some suggestions for me!
             </p>
             <div className={styles.social}>
               <ul>
