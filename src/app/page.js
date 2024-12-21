@@ -10,9 +10,6 @@ import org2 from "../../public/org2.png";
 import Hireme, { ScrollTop } from "./Hireme";
 import About from "./About";
 import Projects from "./Projects";
-// import Contact from "./Contact";
-// import Resume from "./Resume";
-// import NewCards from "./NewCards";
 import NewContact from "./NewContact";
 import ResumeNew from "./ResumeNew";
 
@@ -78,7 +75,6 @@ const Home = () => {
       <About />
       <NewContact/>
       <ScrollTop/>
-      {/* <Contact /> */}
     </>
   );
 };

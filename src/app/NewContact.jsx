@@ -1,65 +1,55 @@
 "use client";
-import React, { useState } from "react";
+// import React, { useState } from "react";
 import styles from "./pages/styles/NewContact.module.css";
-import gmail from "../../public/gmail.png";
-import phone from "../../public/phone.png";
-import pin from "../../public/pin.png";
-import Image from "next/image";
-import { TextField } from "@mui/material";
+// import gmail from "../../public/gmail.png";
+// import phone from "../../public/phone.png";
+// import pin from "../../public/pin.png";
+// import Image from "next/image";
+// import { TextField } from "@mui/material";
 import Link from "next/link";
 import CodeIcon from "@mui/icons-material/Code";
 import { Facebook, Instagram, LinkedIn } from "@mui/icons-material";
-import axios from "axios";
+
 const NewContact = () => {
-  const [newData, setData] = useState({ names: "", email: "", message: "" });
-  // const [email, setEmail] = useState("");
-  // const [message, setMessage] = useState("");
-  // const handleSubmit = async (event) => {
-  //   event.preventDefault();
-
-  //   // const formData = new FormData(event.target);
-  //   const response = await axios.post("/api/submit", newData);
-
-  //   // Handle response if necessary
-  //   const data = await response.json();
-  //   // Perform your form submission logic here
-  //   console.log(data);
-  //   console.log("Submitted:", newData);
-  // };
-  const handleChange = (event) => {
-    let value = event.target.value;
-    let name = event.target.name;
-
-    setData((prevalue) => {
-      return {
-        ...prevalue, // Spread Operator
-        [name]: value,
-      };
+  async function handleSubmit(e) {
+    e.preventDefault();
+    const response = await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        Accept: "application/json",
+      },
+      body: JSON.stringify({
+        access_key: "8b7a1e89-a463-4076-88f2-400b775649e8",
+        name: e.target.name.value,
+        email: e.target.email.value,
+        message: e.target.message.value,
+      }),
     });
-  };
+    const result = await response.json();
+    if (result.success) {
+      console.log(result);
+      
+    }
+  }
+
   return (
     <>
-      {/* <div className={styles.card_container}>
-        <Cards logo={gmail} content={`shubhojit357@gmail.com`} />
-        <Cards logo={phone} />
-        <Cards logo={pin} />
-      </div> */}
       <div className={styles.main} id="contact">
-        {/* <h1 className={styles.header}>Contact</h1> */}
+        <h1 className={styles.header}>Contact</h1>
         <div className={styles.secondary}>
           <div className={styles.left}>
             <h1 className={styles.h1}>
               Fill the form, <br /> it's easy.
             </h1>
-            <form action="#">
+            <form onSubmit={handleSubmit}>
               <div>
                 {" "}
                 <input
                   type="text"
                   placeholder="Name"
-                  name="names"
+                  name="name"
                   className={styles.input}
-                  onChange={handleChange}
                 />
               </div>
               <div>
@@ -67,9 +57,8 @@ const NewContact = () => {
                 <input
                   type="email"
                   name="email"
-                  placeholder="Email"
+                  placeholder="Your Email"
                   className={styles.input}
-                  onChange={handleChange}
                 />
               </div>
               <div>
@@ -78,7 +67,6 @@ const NewContact = () => {
                   name="message"
                   className={styles.textarea}
                   placeholder="Enter your message here."
-                  onChange={handleChange}
                 ></textarea>
               </div>
               <button type="submit" className={styles.button}>
@@ -143,15 +131,4 @@ const NewContact = () => {
   );
 };
 
-const Cards = ({ logo, content }) => {
-  return (
-    <div className={styles.card}>
-      <Image
-        src={logo}
-        alt="logo"
-        style={{ width: "1.25rem", height: "1.25rem", padding: "0.625rem" }}
-      />
-    </div>
-  );
-};
 export default NewContact;

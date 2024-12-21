@@ -20,7 +20,7 @@
   align-items: center;
   margin-bottom: 1.25rem;
   font-family: "Fira Code", monospace;
-  font-size: 17.6px;
+  font-size: 1.1rem;
   font-weight: 600;
 
   /* box-shadow: 0rem 0rem 0.3125rem 0.125rem #d7d7d7; */
@@ -31,7 +31,7 @@
   border: 0.0625rem solid rgba(207, 207, 207, 0.248);
 }
 .nav_ul {
-  background: -webkit-linear-gradient(#ffffff, #151515);
+  background: -webkit-linear-gradient(#262626cd, #020202b1);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   width: 21.875rem;

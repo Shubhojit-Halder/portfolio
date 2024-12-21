@@ -5,9 +5,7 @@ import edu from "../../public/mortarboard.gif";
 import codeSp from "../../public/codeSp.gif";
 import job from "../../public/job.gif";
 import trophy from "../../public/trophy.gif";
-import profile from "../../public/user-profile.gif";
 import Image from "next/image";
-import Typography from "@mui/joy/Typography";
 import CircularProgress from "@mui/joy/CircularProgress";
 import react from "../../public/react.png";
 import c from "../../public/c.png";
@@ -19,6 +17,7 @@ import html from "../../public/html.png";
 import css from "../../public/css.png";
 import mysql from "../../public/mysql.png";
 import mongo from "../../public/mongo.png";
+import git from "../../public/git.png";
 const EduData = [
   {
     name: "Meghnad Saha Institute of Technology",
@@ -171,6 +170,7 @@ const ResumeNew = () => {
                   { img: exp, val: 80 },
                   { img: mysql, val: 85 },
                   { img: mongo, val: 87 },
+                  { img: git, val: 82 },
                   { img: html, val: 93 },
                   { img: css, val: 90 },
                 ].map((data, id) => {
@@ -188,22 +188,6 @@ const ResumeNew = () => {
                 })}
               </div>
             </CardWrapper>
-            {/* <CardWrapper>
-            <Image
-              src={profile}
-              style={{
-                width: "3.75rem",
-                height: "3.75rem",
-                borderRadius: "50%",
-                position: "absolute",
-                top: -30,
-                left: "5.7813rem",
-              }}
-              alt="logo"
-            />
-          </CardWrapper> */}
-            {/* <Card topImg={codeSp} />
-          <Card topImg={profile} /> */}
           </div>
         </ResumeWrapper>
       </div>
