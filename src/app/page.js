@@ -3,17 +3,15 @@ import styles from "./page.module.css";
 import Navbar from "./Navbar";
 import squi from "../../public/squi.png";
 import dothr from "../../public/dothr.png";
-import dot1 from "../../public/dot1.png";
+// import dot1 from "../../public/dot1.png";
 import TopName from "./TopName";
-import org1 from "../../public/org1.png";
+// import org1 from "../../public/org1.png";
 import org2 from "../../public/org2.png";
 import Hireme, { ScrollTop } from "./Hireme";
 import About from "./About";
 import Projects from "./Projects";
-import Contact from "./Contact";
-import Resume from "./Resume";
-import NewCards from "./NewCards";
 import NewContact from "./NewContact";
+import ResumeNew from "./ResumeNew";
 
 const Home = () => {
   return (
@@ -73,11 +71,10 @@ const Home = () => {
       </main>
       {/* <NewCards/> */}
       <Projects />
+      <ResumeNew />
       <About />
-      <Resume />
       <NewContact/>
       <ScrollTop/>
-      {/* <Contact /> */}
     </>
   );
 };

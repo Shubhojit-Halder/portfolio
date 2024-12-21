@@ -6,6 +6,8 @@ import weblink from "../../public/weblink.png";
 import Image from "next/image";
 import Project from "./Project";
 import Link from "next/link";
+import { motion, useScroll, useTransform } from "framer-motion";
+import { useRef } from "react";
 
 const Projects = () => {
   return (
@@ -24,12 +26,25 @@ export default Projects;
 // const TechStack = [next, react, node, exp, mongo, firebase];
 // const TechStack
 const ProjectCard = () => {
+  const element =useRef();
+  const { scrollYProgress } = useScroll();
+  const scale = useTransform(scrollYProgress, [0, 1], [1, 0.7]);
+  const opacity = useTransform(scrollYProgress, [0, 1], [0,1]);
   return (
     <>
       {Project.map((item, id) => {
         return (
-          <div  className={styles.mini_container}  key={id} >
-            <div style={{boxShadow:"0px 5px 10px #0008312b"}} className={styles.card} key={id}>
+          <div className={styles.mini_container} key={id} ref={element}>
+            <motion.div
+              style={{ scale }}
+              initial={{ opacity: 0.2 }}
+              whileInView={{
+                opacity: 1,
+                transition: { ease: "easeInOut", duration: 1.2 },
+              }}
+              className={styles.card}
+              key={id}
+            >
               <div
                 style={{
                   width: "8.75rem",
@@ -107,7 +122,7 @@ const ProjectCard = () => {
                   alt="project_img"
                 />
               </div>
-            </div>
+            </motion.div>
           </div>
         );
       })}
