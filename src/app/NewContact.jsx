@@ -9,6 +9,9 @@ import styles from "./pages/styles/NewContact.module.css";
 import Link from "next/link";
 import CodeIcon from "@mui/icons-material/Code";
 import { Facebook, Instagram, LinkedIn } from "@mui/icons-material";
+import { useState } from "react";
+import { Alert, AlertTitle } from "@mui/material";
+import Snackbar from "@mui/material/Snackbar";
 
 const NewContact = () => {
   async function handleSubmit(e) {
@@ -29,13 +32,32 @@ const NewContact = () => {
     const result = await response.json();
     if (result.success) {
       console.log(result);
-      
+      setState({ ...state, open: true });
     }
   }
-
+  const handleClose = () => {
+    setState({ ...state, open: false });
+  };
+  const [state, setState] = useState({
+    open: false,
+    vertical: "top",
+    horizontal: "center",
+  });
+  const { vertical, horizontal, open } = state;
   return (
     <>
       <div className={styles.main} id="contact">
+        <Snackbar open={open} autoHideDuration={5000} onClose={handleClose} anchorOrigin={{ vertical,horizontal }}>
+          <Alert
+            
+            onClose={handleClose}
+            severity="success"
+            // variant="filled"
+            sx={{ width: "100%", color: "#fff" }}
+          >
+            Form submitted successfully, we'll get back to you soon!
+          </Alert>
+        </Snackbar>
         <h1 className={styles.header}>Contact</h1>
         <div className={styles.secondary}>
           <div className={styles.left}>
